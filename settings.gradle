@@ -1,0 +1,5 @@
+rootProject.name = 'kodilla'
+include 'good-patterns'
+include 'hibernate'
+
+
