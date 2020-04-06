@@ -8,8 +8,7 @@ import java.util.List;
 
 @NamedNativeQuery(
         name = "Company.retrieveCompanyBySubString",
-        query = "SELECT * FROM Company" +
-                "WHERE name "
+        query = "SELECT * FROM Company WHERE SUBSTRING (name, 1,3) = :COMPANYNAME"
 )
 
 @Entity

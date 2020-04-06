@@ -84,10 +84,12 @@ public class CompanyDaoTestSuite {
 
 
         //When
-        List<Employee> findByLastName = employeeDao.retrieveByLastName("Smith");
+        //List<Employee> findByLastName = employeeDao.retrieveByLastName("Smith");
+        List<Company> findByCompanyName = companyDao.retrieveCompanyBySubString("Software Machine");
 
         //Then
-        Assert.assertEquals(1, findByLastName.size());
+        //Assert.assertEquals(1, findByLastName.size());
+        Assert.assertEquals(1, findByCompanyName.size());
 
         //CleanUp
         try {
